@@ -1,0 +1,83 @@
+.navbar{
+	margin-bottom: 0;
+	border-radius: 0;
+	font-size: 1.1em;
+	border: 0;
+	padding: 0;
+	/*border-bottom: 2px solid #1CA2E5;*/
+}
+.navbar-brand{
+	float: left;
+	min-height: 55px;
+	margin-bottom: 0;
+	display: inline;
+	/*padding: 5px 15px 5px;*/
+}
+.navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:focus, .navbar-default .navbar-nav .active a:hover{
+	border-bottom: 2px solid #1CA2E5;
+	background-color: #fcfcfc;
+}
+.navbar-default .navbar-nav li a:hover{
+	/*color: #FFF;
+	background-color: #1CA2E5;*/
+	border-bottom: 2px solid #1CA2E5;
+	background-color: #fcfcfc;
+	transition: 0.3s;
+}
+.carousel-caption{
+	text-transform: uppercase;
+}
+@media (max-width: 600px){
+	.carousel-caption{
+		display: none;
+	}
+}
+.logo-img{
+	display: inline;
+}
+.tech{
+	color: #1CA2E5;
+	font-weight: bold;
+}
+.avancer{
+	text-transform: lowercase;
+}
+img{
+	max-height: 100%;
+	max-width: 100%;
+}
+.contentClass{
+	padding: 3%;
+	text-align: justify;
+	font-size: 16px;
+	font-style: italic;
+}
+.myText{
+	color: #1CA2E5;
+	font-weight: bold;
+}
+.panel{
+	transition: .8s;
+}
+.desc-team{
+	padding: 5%;
+	text-align: center;
+	font-style: italic;
+}
+.desc-name{
+	color: #1CA2E5;
+	font-size: 16px;
+	font-style: initial;
+}
+.blue{
+	background-color: #cbd2d8;
+	color: #000;
+	padding: 3%;
+	opacity: 0.7;
+}
+.foot{
+	margin-top: 1%;
+}
+.foot a{
+	padding-left: 1%;
+}
