@@ -42,7 +42,7 @@
     <link rel="stylesheet" type="text/css" href="utilities/css/all.css">
 </head>
 <body>
-	<?php include 'navbar.php'; ?>
+	<?php include 'navbar_admin.php'; ?>
 	<div class="container">
         <div align="center" class="alert alert-info">
             <form class="form-inline" method="GET">

@@ -1,7 +1,7 @@
 <?php
 require 'session_required.php';
 require 'connection.php';
-$page = 'index';
+$page = 'add_word';
 if(isset($_POST['submit'])){
     $japanese = filter($_POST['japanese']);
     $japanese = unpack("C*", $japanese);
@@ -12,8 +12,10 @@ if(isset($_POST['submit'])){
     $created  = date('Y-m-d H:i:s');
     if(!$user->isExistWord($japanese)){
         $user->addWord($japanese,$english,$lessonNo,$details,$created);
+        $_SESSION['message'] = 'Word Successfully Added!!';
+    }else{
+        $_SESSION['message'] = 'The word already exists';
     }
-    $_SESSION['message'] = 'Word Successfully Added!!';
 }
 function filter($data){
     $data = trim($data);
@@ -34,7 +36,7 @@ function filter($data){
     <link rel="stylesheet" type="text/css" href="utilities/css/style.css">
 </head>
 <body>
-<?php include 'navbar.php'; ?>
+<?php include 'navbar_admin.php'; ?>
 <div class="my-body">
     <h2 class="text-center">Add Word!</h2>
     <?php
@@ -61,21 +63,7 @@ function filter($data){
                 <label class="control-label col-sm-2" for="lessonNo">Lesson No:</label>
                 <div class="col-sm-10">
                     <select class="form-control" name="lessonNo[]" id="lessonNo">
-                        <option value="16">16</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
+                        <option value="22">22</option>
                         <option value="14">14</option>
                         <option value="15">15</option>
                         <option value="16">16</option>
@@ -83,6 +71,12 @@ function filter($data){
                         <option value="18">18</option>
                         <option value="19">19</option>
                         <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
                     </select>
                 </div>
             </div>

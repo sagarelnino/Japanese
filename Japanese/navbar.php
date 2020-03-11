@@ -21,11 +21,12 @@
                     <ul class="dropdown-menu">
                         <li <?php if($page == 'mcq_exam_e_j'){ echo 'class="active"';} ?>><a href="mcq_exam_english_to_japanese.php">English to Japanese</a></li>
                         <li <?php if($page == 'mcq_exam_j_e'){ echo 'class="active"';} ?>><a href="mcq_exam_japanese_to_english.php">Japanese to English</a></li>
+                        <li <?php if($page == 'mcq_kanji'){ echo 'class="active"';} ?>><a href="mcq_kanji.php">Kanji</a></li>
                     </ul>
                 </li>      
                 <li <?php if($page == 'generate_question'){ echo 'class="active"';} ?>><a href="generate_question.php">Generate Question</a></li>
+                <li <?php if($page == 'kanji'){ echo 'class="active"';} ?>><a href="kanjis.php">Kanji</a></li>
                 <li <?php if($page == 'login'){ echo 'class="active"';} ?>><a href="login.php">Admin</a></li>
-                <li><a href="logout.php">Logout</a></li>
             </ul>
         </div>
     </div>
